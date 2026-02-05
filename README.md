@@ -35,26 +35,26 @@ This diagram answers: **“What exists in My Chonker?”**
 mindmap
   root((My Chonker))
     Identity
-      Title["My Chonker"]
-      Bio["Append-only context stack"]
+      Title
+      Bio
     Core_Principles
-      AppendOnly["Append-only"]
-      Lossless["Lossless"]
-      Reversible["Reversible"]
-      NonCanonical["Non-canonical"]
-      HumanAuthority["Human-authorized interpretation"]
+      AppendOnly
+      Lossless
+      Reversible
+      NonCanonical
+      HumanAuthority
     Artifacts
-      Paper["Paper (per-source JSON)"]
-      Archive["Archive (folder of papers)"]
-      Container["Container (append-only aggregation)"]
+      Paper
+      Archive
+      Container
     Controls
-      ThreadLens["Thread Lens"]
-      BiasMode["Soft / Hard Bias"]
+      ThreadLens
+      BiasMode
     NonGoals
-      NotMemory["Not memory"]
-      NotTruth["Not truth"]
-      NotAgent["Not an agent"]
-      NotAuthority["Not authoritative"]
+      NotMemory
+      NotTruth
+      NotAgent
+      NotAuthority
 
 This is a structural map, not a workflow.
 It defines what exists, not what is true.
