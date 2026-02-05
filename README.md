@@ -1,223 +1,115 @@
-# My Chonker
-**An append-only context stack for lossless aggregation**
+My Chonker
 
----
+An append-only context stack for lossless aggregation.
 
-## What is My Chonker?
+Instead of merging meaning, My Chonker stacks context.
 
-My Chonker is a system for collecting, preserving, and aggregating context **without deciding what it means**.
-
-It is designed to safely extract information from conversations or documents, store that information verbatim, and stack it in a way that is **lossless, reversible, and non-authoritative**.
-
-My Chonker exists *before* memory, *before* interpretation, and *before* canon.
-
----
-
-## What Problem Does This Solve?
-
-When working across many conversations, documents, or systems, context is often:
-- summarized too early
-- merged irreversibly
-- treated as authoritative by accident
-- or silently rewritten
-
-My Chonker avoids all of that.
-
-Instead of **merging meaning**, it **stacks context**.
-
----
-
-## 🧠 Conceptual Overview (Mind Map)
-
-This diagram answers: **“What exists in My Chonker?”**
-
-```mermaid
-mindmap
-  root((My Chonker))
-    Identity
-      Title
-      Bio
-    Core_Principles
-      AppendOnly
-      Lossless
-      Reversible
-      NonCanonical
-      HumanAuthority
-    Artifacts
-      Paper
-      Archive
-      Container
-    Controls
-      ThreadLens
-      BiasMode
-    NonGoals
-      NotMemory
-      NotTruth
-      NotAgent
-      NotAuthority
-
-This is a structural map, not a workflow.
-It defines what exists, not what is true.
+It aggregates structured information without asserting truth, authority, interpretation, or canon.
 
 
 ---
 
-🔁 How My Chonker Works (System Flow)
+Purpose
 
-This diagram answers: “What happens when I run it?”
+My Chonker exists to preserve context safely.
 
-flowchart LR
-    A[Thread / Source] --> B[Chonker Autorun JSON]
-    B --> C[Paper JSON]
-    C --> D[Raw Archive Folder]
-    D --> E[Append-Only Container]
-    E -->|optional| F[Filtered / Derived Views]
+Nothing is overwritten.
+Nothing is decided.
+Nothing is collapsed.
 
-    C:::safe
-    D:::safe
-    E:::safe
-    F:::derived
-
-    classDef safe fill:#e6f3ff,stroke:#333,stroke-width:1px;
-    classDef derived fill:#fce5cd,stroke:#333,stroke-width:1px;
-
-Key properties of this flow:
-
-No step overwrites a previous step
-
-No step decides meaning
-
-No step assigns truth
-
-Interpretation happens only downstream, by humans or other systems
-
+Interpretation is deferred.
 
 
 ---
 
-Core Artifacts
+What This Is
+
+My Chonker is context infrastructure.
+
+It collects and stacks structured context so it can be interpreted later by humans or downstream systems.
+
+
+---
+
+What This Is Not
+
+My Chonker is not memory.
+My Chonker is not truth.
+My Chonker is not canon.
+My Chonker is not an agent.
+My Chonker is not an authority.
+
+It does not evaluate meaning.
+It does not resolve conflicts.
+It does not assign importance.
+
+
+---
+
+Core Principles
+
+Append-only
+Lossless
+Reversible
+Non-canonical
+Human-authorized interpretation
+
+
+---
+
+Conceptual Structure (Plain Language)
+
+My Chonker is composed of three core artifacts:
 
 Paper
-
-A Paper is a single, immutable JSON artifact produced from one source (e.g., one thread).
-
-Verbatim extraction
-
-Dated and sourced
-
-Never edited after creation
-
-
-
----
+A single-source JSON capture. Immutable and traceable.
 
 Archive
-
-An Archive is a folder containing many Papers.
-
-No transformations
-
-No reordering
-
-No deduplication
-
-Pure storage
-
-
-
----
+A folder containing multiple Papers. No merging. No prioritization.
 
 Container
-
-A Container is an append-only aggregation of Papers.
-
-Papers are wrapped, not merged
-
-Fully reversible
-
-Informationally equivalent to the Archive folder
-
-
-If the container can reproduce all original Papers verbatim, it is valid.
+An append-only aggregation of Papers. Preserves all content verbatim.
 
 
 ---
 
-What My Chonker Is
+Controls
 
-An append-only context stack
+ThreadLens
+A filter defining what to extract, not what matters.
 
-A lossless aggregation mechanism
-
-A pre-memory, pre-canon pipeline
-
-A portable specification with multiple runtimes
-
+BiasMode
+Controls strictness of selection only. Never alters source data.
 
 
 ---
 
-What My Chonker Is Not
+Usage Pattern
 
-❌ Not memory
-
-❌ Not truth
-
-❌ Not an agent
-
-❌ Not authoritative
-
-❌ Not a decision-maker
-
-
-Any system that uses My Chonker may do those things —
-My Chonker itself never does.
+Run an autorun instruction in a source.
+Receive a Paper JSON.
+Store Papers in an Archive.
+Aggregate via a Container.
+Interpret later.
 
 
 ---
 
-Design Guarantees
+Design Rule
 
-Append-only: nothing is overwritten
-
-Lossless: no information is discarded
-
-Reversible: originals can always be recovered
-
-Non-canonical: no implicit truth is created
-
-Human-authorized interpretation only
-
+Structure is allowed.
+Meaning is deferred.
+Authority stays human.
 
 
 ---
 
-Typical Use Cases
+License
 
-Multi-thread research
-
-Large conversational archives
-
-AI system handoff and alignment
-
-Pre-ingestion filtering for memory systems
-
-Long-running design or architecture projects
-
+MIT
 
 
 ---
 
-Status
-
-My Chonker is stable at v1.0.x.
-
-The architecture is locked.
-Future changes are additive, not corrective.
-
-
----
-
-Philosophy (One Sentence)
-
-> My Chonker stacks context so humans can decide meaning later. 
+My Chonker stacks context.
+You decide what it means.
