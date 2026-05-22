@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Archive Index",
+  "type": "object",
+  "required": ["archive_id", "papers"],
+  "properties": {
+    "archive_id": {"type": "string"},
+    "papers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["paper_id", "path", "created_at"],
+        "properties": {
+          "paper_id": {"type": "string"},
+          "path": {"type": "string"},
+          "created_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    }
+  }
+}
