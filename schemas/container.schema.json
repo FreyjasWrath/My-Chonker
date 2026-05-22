@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Container Event",
+  "type": "object",
+  "required": ["event_id", "event_time", "event_type", "paper_ref", "paper_hash"],
+  "properties": {
+    "event_id": {"type": "string"},
+    "event_time": {"type": "string", "format": "date-time"},
+    "event_type": {"type": "string", "const": "paper_appended"},
+    "paper_ref": {"type": "string"},
+    "paper_hash": {"type": "string"}
+  }
+}
