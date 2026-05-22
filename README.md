@@ -113,3 +113,37 @@ MIT
 
 My Chonker stacks context.
 You decide what it means.
+
+
+## Repository Structure
+- `docs/`: normative specifications, NFRs, test plan, versioning, quickstart.
+- `schemas/`: JSON Schema contracts for artifacts.
+- `examples/`: valid and invalid sample artifacts.
+- `tests/fixtures/`: fixtures for invariant-oriented tests.
+- `scripts/`: validation helpers.
+- `src/`: implementation placeholder modules.
+
+## End-to-End Usage
+1. Capture source into a Paper.
+2. Store Paper into an Archive index.
+3. Append Paper reference into Container log.
+4. Validate schemas and fixtures with `python3 scripts/validate_examples.py`.
+
+## Glossary
+- ThreadLens: extraction filter for what is selected.
+- BiasMode: extraction strictness control (`strict`, `balanced`, `broad`) only.
+
+## FAQ
+- Why non-authoritative? Because My Chonker preserves context without ranking truth.
+- Can conflicts coexist? Yes. Conflicting context is preserved as parallel artifacts.
+
+
+## Developer Setup
+- Install validator dependency: `make setup`
+- Run example validation: `make validate`
+- CI runs the same validator on push and pull requests via `.github/workflows/validate-examples.yml`.
+
+
+## Runtime Status
+- Implemented operation 1: `create_paper(source, lens, bias_mode)` in `src/chonker.py`.
+- Operation 2 (`store_paper`) is now implemented. Operations 3-4 are still pending runtime implementation.
